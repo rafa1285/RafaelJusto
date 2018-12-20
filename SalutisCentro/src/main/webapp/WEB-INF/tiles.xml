@@ -9,8 +9,14 @@
         <put-attribute name="footer" value="/tiles/footer.jsp" />
     </definition>
     
+    <definition name="loginLayout" template="/tiles/layout.jsp">
+    <put-attribute name="header" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/tiles/footer.jsp" />
+    </definition>
+    
     <!-- Establecemos nuevos nombres asociados a las rutas de las listas o formularios, para crearles las vistas -->
-    <definition name="login.form" extends="baseLayout">
+    <definition name="login.form" extends="loginLayout">
         <put-attribute name="body" value="/login/form.jsp" />
     </definition>
     <definition name="inicio.form" extends="baseLayout">
